@@ -1,0 +1,113 @@
+/* --------------------------------------------- start FONT description --------------------------------------------- */
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsans.woff") format("woff"),
+       url("../fonts/ptsans.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal; 
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsansbold.woff") format("woff"),
+       url("../fonts/ptsansbold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal; 
+}
+
+@font-face {
+  font-family: "Cuprum";
+  src: url("../fonts/cuprum.woff") format("woff"),
+       url("../fonts/cuprum.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal; 
+}
+
+@font-face {
+  font-family: "Cuprum";
+  src: url("../fonts/cuprumitalic.woff") format("woff"),
+       url("../fonts/cuprumitalic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Cuprum";
+  src: url("../fonts/cuprumbold.woff") format("woff"),
+       url("../fonts/cuprumbold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cuprum";
+  src: url("../fonts/cuprumbolditalic.woff") format("woff"),
+       url("../fonts/cuprumbolditalic.woff2") format("woff2");
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* --------------------------------------------- end FONT description --------------------------------------------- */
+
+
+/* --------------------------------------------- start MAIN-MENU --------------------------------------------- */
+.main-header {
+  margin: 30px 0px;
+}
+.main-navigation {
+  min-width: 960px;
+  display: flex;
+  justify-content: center;   /* horizontal */
+  background-color: #293449;
+
+/* Временно для сетки
+  min-height: 42px;
+  outline: 1px solid yellow;*/
+}
+
+.flex-container {
+  min-width: 940px;
+  min-height: 42px;  
+  display: flex;
+  flex-direction: row;
+
+/* Временно для сетки
+  outline: 1px solid brown;*/
+}
+.flex-container a {
+  padding-left: 17px;
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 17px;
+  text-decoration: none;
+  color: #ffffff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0px 30px;
+
+/*  border: 1px solid red;*/
+}
+.flex-container > a:first-child { 
+  padding-left: 53px;
+}
+.flex-container > a:last-child {
+  padding-right: 53px;
+}
+
+.flex-container > a:hover,
+.flex-container > a:focus { 
+  background-color: #212a3a; 
+}
+.flex-container > a:focus {
+  outline: none;
+}
+.flex-container > a:active {
+  color: #a2a5a9;
+  background-color: #212a3a;
+}
+/* --------------------------------------------- end MAIN-MENU --------------------------------------------- */
